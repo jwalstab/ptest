@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>The result is : {{result}}</h2>
+<br>
+<h2>globber is called {{globber.name}} and he is level {{globber.level}}</h2>
+<br>
+{% if globber.level > 5 %}
+<h1>GLOBBER IS POWERFUL</h1>
+{% endif %}
+
+
+
+
+<script>
+setTimeout(returnToHome,3000);
+function returnToHome(){
+    window.location = "home";
+}
+</script>
+{% endblock %}
